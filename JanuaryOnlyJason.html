@@ -95,26 +95,29 @@
 <!-- January Second Week -->
 
 <table class="table table-striped">
+    
+    <h6 style="color: rgb(0, 0, 0);text-align: center;">January</h6>
+    <h8 style="color: rgb(0, 0, 0);text-align: left;">Weeek 01</h8>
     <tr  class="bg-info">
-        <th>Month</th>
-        <th>Date</th>
-        <th>Week</th>
-        <th>Description</th>
-        <th>Status</th>
+                <th>Month</th>
+                <th>Date</th>
+                <th>Week</th>
+                <th>Description</th>
+                <th>Location</th>
     </tr>
 
-    <tbody id="week2">
+    <tbody id="Jweek1">
         
     </tbody>
 </table>
 
 <script>
 	var myArray = [
-                {'Month':'January','Date':'09/01/2023','Week':'Week_2', 'Description':'First day at Dialog',  'Status':'Office'},
-                {'Month':'January','Date':'09/01/2023','Week':'Week_2','Description':'Second day at Dialog',  'Status':'Office'},
-                {'Month':'January','Date':'09/01/2023','Week':'Week_2', 'Description':'First day at Dialog',  'Status':'Office'},
-                {'Month':'January','Date':'09/01/2023','Week':'Week_2','Description':'First day at Dialog',  'Status':'Office'},
-                {'Month':'January','Date':'09/01/2023','Week':'Week_2','Description':'First day at Dialog',  'Status':'Office'},
+                {'Month':'January','Week':'Week_1','Date':'09/01/2023', 'Description':'Describe and what is CRM system is',  'Location':'Office'},
+                {'Month':'January','Week':'Week_1','Date':'10/01/2023','Description':'how CRM system work with examples',  'Location':'Office'},
+                {'Month':'January','Week':'Week_1','Date':'11/01/2023', 'Description':'Introduce one crm system',  'Location':'Office'},
+                {'Month':'January','Week':'Week_1','Date':'12/01/2023', 'Description':'Describe how one crm system work with example of using my dialog app',  'Location':'Office'},
+                {'Month':'January','Week':'Week_1','Date':'13/01/2023', 'Description':'Describe how one crm system work with example of biscare',  'Location':'Office'},
                 
 	]
 	
@@ -123,7 +126,7 @@
 
 
 	function buildTable(data){
-		var table = document.getElementById('week2')
+		var table = document.getElementById('Jweek1')
 
 		for (var i = 0; i < data.length; i++){
 			var row = `<tr>
@@ -131,7 +134,57 @@
                                     <td>${data[i].Date}</td>
                                     <td>${data[i].Week}</td>
                                     <td>${data[i].Description}</td>
-                                    <td>${data[i].Status}</td>
+                                    <td>${data[i].Location}</td>
+					  </tr>`
+			table.innerHTML += row
+
+
+		}
+	}
+
+    </script>
+
+<!-- January Second Week -->
+
+<table class="table table-striped">
+    <h8 style="color: rgb(0, 0, 0);text-align: left;">Weeek 02</h8>
+    <tr  class="bg-info">
+        <th>Month</th>
+        <th>Date</th>
+        <th>Week</th>
+        <th>Description</th>
+        <th>Location</th>
+    </tr>
+
+    <tbody id="Jweek2">
+        
+    </tbody>
+</table>
+
+<script>
+	var myArray = [
+                {'Month':'January','Date':'16/01/2023','Week':'Week_2', 'Description':'Holiday for Tamil Thaipongal',  'Location':'Office'},
+                {'Month':'January','Date':'17/01/2023','Week':'Week_2','Description':'Traning provided what is agile methodology, values and principles.',  'Location':'Office'},
+                {'Month':'January','Date':'18/01/2023','Week':'Week_2', 'Description':'Describe diifrent type of agile and show main rules in the agile methodology',  'Location':'Office'},
+                {'Month':'January','Date':'19/01/2023','Week':'Week_2','Description':'Describe agile ceremonies and how it  works in realtime workplace',  'Location':'Office'},
+                {'Month':'January','Date':'20/01/2023','Week':'Week_2','Description':'Training provided how to use agile methodology for realtime workplace',  'Location':'Office'},
+                
+	]
+	
+	buildTable(myArray)
+
+
+
+	function buildTable(data){
+		var table = document.getElementById('Jweek2')
+
+		for (var i = 0; i < data.length; i++){
+			var row = `<tr>
+                                    <td>${data[i].Month}</td>
+                                    <td>${data[i].Date}</td>
+                                    <td>${data[i].Week}</td>
+                                    <td>${data[i].Description}</td>
+                                    <td>${data[i].Location}</td>
 					  </tr>`
 			table.innerHTML += row
 
@@ -144,26 +197,27 @@
     <!-- January Third Week -->
 
 <table class="table table-striped">
+    <h8 style="color: rgb(0, 0, 0);text-align: left;">Weeek 03</h8>
     <tr  class="bg-info">
         <th>Month</th>
         <th>Date</th>
         <th>Week</th>
         <th>Description</th>
-        <th>Status</th>
+        <th>Location</th>
     </tr>
 
-    <tbody id="week3">
+    <tbody id="Jweek3">
         
     </tbody>
 </table>
 
 <script>
 	var myArray = [
-                {'Month':'January','Date':'09/01/2023','Week':'Week_3', 'Description':'First day at Dialog',  'Status':'Office'},
-                {'Month':'January','Date':'09/01/2023','Week':'Week_3','Description':'Second day at Dialog',  'Status':'Office'},
-                {'Month':'January','Date':'09/01/2023','Week':'Week_3', 'Description':'First day at Dialog',  'Status':'Office'},
-                {'Month':'January','Date':'09/01/2023','Week':'Week_3','Description':'First day at Dialog',  'Status':'Office'},
-                {'Month':'January','Date':'09/01/2023','Week':'Week_3','Description':'First day at Dialog',  'Status':'Office'},
+                {'Month':'January','Date':'23/01/2023','Week':'Week_3', 'Description':'First day at Dialog',  'Location':'Office'},
+                {'Month':'January','Date':'24/01/2023','Week':'Week_3','Description':'Second day at Dialog',  'Location':'Office'},
+                {'Month':'January','Date':'25/01/2023','Week':'Week_3', 'Description':'First day at Dialog',  'Location':'Office'},
+                {'Month':'January','Date':'26/01/2023','Week':'Week_3','Description':'First day at Dialog',  'Location':'Office'},
+                {'Month':'January','Date':'27/01/2023','Week':'Week_3','Description':'First day at Dialog',  'Location':'Office'},
                 
 	]
 	
@@ -172,7 +226,7 @@
 
 
 	function buildTable(data){
-		var table = document.getElementById('week3')
+		var table = document.getElementById('Jweek3')
 
 		for (var i = 0; i < data.length; i++){
 			var row = `<tr>
@@ -180,7 +234,7 @@
                                     <td>${data[i].Date}</td>
                                     <td>${data[i].Week}</td>
                                     <td>${data[i].Description}</td>
-                                    <td>${data[i].Status}</td>
+                                    <td>${data[i].Location}</td>
 					  </tr>`
 			table.innerHTML += row
 
@@ -193,26 +247,27 @@
       <!-- January Fourth Week -->
 
 <table class="table table-striped">
+    <h8 style="color: rgb(0, 0, 0);text-align: left;">Weeek 04</h8>
     <tr  class="bg-info">
         <th>Month</th>
         <th>Date</th>
         <th>Week</th>
         <th>Description</th>
-        <th>Status</th>
+        <th>Location</th>
     </tr>
 
-    <tbody id="week4">
+    <tbody id="Jweek4">
         
     </tbody>
 </table>
 
 <script>
 	var myArray = [
-                {'Month':'January','Date':'09/01/2023','Week':'Week_4', 'Description':'First day at Dialog',  'Status':'Office'},
-                {'Month':'January','Date':'09/01/2023','Week':'Week_4','Description':'Second day at Dialog',  'Status':'Office'},
-                {'Month':'January','Date':'09/01/2023','Week':'Week_4', 'Description':'First day at Dialog',  'Status':'Office'},
-                {'Month':'January','Date':'09/01/2023','Week':'Week_4','Description':'First day at Dialog',  'Status':'Office'},
-                {'Month':'January','Date':'09/01/2023','Week':'Week_4','Description':'First day at Dialog',  'Status':'Office'},
+                {'Month':'January','Date':'30/01/2023','Week':'Week_4', 'Description':'First day at Dialog',  'Location':'Office'},
+                {'Month':'January','Date':'31/01/2023','Week':'Week_4','Description':'Second day at Dialog',  'Location':'Office'},
+                // {'Month':'January','Date':'09/01/2023','Week':'Week_4', 'Description':'First day at Dialog',  'Location':'Office'},
+                // {'Month':'January','Date':'09/01/2023','Week':'Week_4','Description':'First day at Dialog',  'Location':'Office'},
+                // {'Month':'January','Date':'09/01/2023','Week':'Week_4','Description':'First day at Dialog',  'Location':'Office'},
                 
 	]
 	
@@ -221,7 +276,7 @@
 
 
 	function buildTable(data){
-		var table = document.getElementById('week4')
+		var table = document.getElementById('Jweek4')
 
 		for (var i = 0; i < data.length; i++){
 			var row = `<tr>
@@ -229,7 +284,7 @@
                                     <td>${data[i].Date}</td>
                                     <td>${data[i].Week}</td>
                                     <td>${data[i].Description}</td>
-                                    <td>${data[i].Status}</td>
+                                    <td>${data[i].Location}</td>
 					  </tr>`
 			table.innerHTML += row
 
