@@ -45,52 +45,7 @@
 
             
         
-<table class="table table-striped">
-    <tr  class="bg-info">
-                <th>Month</th>
-                <th>Date</th>
-                <th>Week</th>
-                <th>Description</th>
-                <th>Status</th>
-    </tr>
 
-    <tbody id="week1">
-        
-    </tbody>
-</table>
-
-<script>
-	var myArray = [
-                {'Month':'January','Week':'Week_1','Date':'09/01/2023', 'Description':'First day at Dialog',  'Status':'Office'},
-                {'Month':'January','Week':'Week_1','Date':'09/01/2023','Description':'Second day at Dialog',  'Status':'Office'},
-                {'Month':'January','Week':'Week_1','Date':'09/01/2023', 'Description':'First day at Dialog',  'Status':'Office'},
-                {'Month':'January','Week':'Week_1','Date':'09/01/2023', 'Description':'First day at Dialog',  'Status':'Office'},
-                {'Month':'January','Week':'Week_1','Date':'09/01/2023', 'Description':'First day at Dialog',  'Status':'Office'},
-                
-	]
-	
-	buildTable(myArray)
-
-
-
-	function buildTable(data){
-		var table = document.getElementById('week1')
-
-		for (var i = 0; i < data.length; i++){
-			var row = `<tr>
-                                    <td>${data[i].Month}</td>
-                                    <td>${data[i].Date}</td>
-                                    <td>${data[i].Week}</td>
-                                    <td>${data[i].Description}</td>
-                                    <td>${data[i].Status}</td>
-					  </tr>`
-			table.innerHTML += row
-
-
-		}
-	}
-
-    </script>
 
 <!-- January Second Week -->
 
