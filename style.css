@@ -135,7 +135,21 @@ header{
     
   }
 
+  .linkS {
+    /* background-color: #ffffff; */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+  }
   .Jheader{
     height: 25vh;
   }
 
+  /* png for social link */
+.img{
+    width: 20px;
+    height: 15px;
+    padding-right: 4px;
+}
